@@ -25,6 +25,10 @@ const emailnotif = document.querySelector(".forgot-password-notif");
 
 const closenotif = document.querySelector(".close-notif");
 
+const productsbtn = document.querySelector(".products-btn");
+
+const discoverbtns = document.querySelectorAll(".discover-btn");
+
 // themeButton.classList.contains(iconTheme)
 function switchtheme() {
   const moonicon = "fa-moon";
@@ -413,6 +417,8 @@ function emptycart() {
 function gotoproducts() {
   removeactivepage();
   sections[1].classList.add("active-page");
+  removehighlight();
+  anchorlink[1].classList.add("highlight");
 }
 
 // event listeners
@@ -452,4 +458,10 @@ forgottentag.addEventListener("click", (e) => {
 
 closenotif.addEventListener("click", () => {
   emailnotif.classList.remove("show-email-notif");
+});
+
+productsbtn.addEventListener("click", gotoproducts);
+
+discoverbtns.forEach((btn) => {
+  btn.addEventListener("click", gotoproducts);
 });

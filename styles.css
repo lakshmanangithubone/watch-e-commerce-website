@@ -1254,8 +1254,10 @@ body {
   }
 
   .our-story {
+    min-height: 80vh;
+
     padding: 0 12vw;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .testimonials {
@@ -1286,7 +1288,7 @@ body {
     width: 35vw;
   }
   .our-story {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 8vw;
   }
 
