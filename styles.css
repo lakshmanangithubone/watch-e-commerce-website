@@ -507,6 +507,7 @@ body {
   justify-content: space-around;
   color: var(--title-color);
   /* background-color: palevioletred; */
+  /* position: relative; */
 }
 
 /* .products-section h2 {
@@ -578,11 +579,9 @@ body {
   background-color: var(--title-color);
   border: 0;
   font-size: var(--twenty);
-  position: relative;
+  /* position: absolute; */
   cursor: pointer;
   text-align: right;
-  position: relative;
-  left: 340px;
 }
 
 .notification {
